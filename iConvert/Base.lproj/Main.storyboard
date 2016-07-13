@@ -197,9 +197,109 @@
                     <view key="view" contentMode="scaleToFill" id="GvN-F4-kqY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R6m-YW-iPA">
+                                <rect key="frame" x="89" y="395" width="134" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fid-KT-7Ow">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                        <state key="normal" title="Calculate distances"/>
+                                        <connections>
+                                            <action selector="buttonActivated:" destination="W5s-gt-Bwl" eventType="touchUpInside" id="m8k-Fd-q3c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECK-za-ff9">
+                                <rect key="frame" x="210" y="249" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-KP-qtq">
+                                <rect key="frame" x="210" y="287" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoe-7Q-I7p">
+                                <rect key="frame" x="210" y="325" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-mz-aSw">
+                                <rect key="frame" x="210" y="363" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y93-mY-jR6">
+                                <rect key="frame" x="20" y="245" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F85-Xu-nXS">
+                                <rect key="frame" x="20" y="283" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Third Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-ve-4ab">
+                                <rect key="frame" x="20" y="321" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fourth Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CeL-fw-F27">
+                                <rect key="frame" x="20" y="359" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter start location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mB-vt-mkx">
+                                <rect key="frame" x="20" y="142" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xXW-jN-hVW">
+                                <rect key="frame" x="20" y="186" width="280" height="29"/>
+                                <segments>
+                                    <segment title="Meters"/>
+                                    <segment title="Kilometers"/>
+                                    <segment title="Miles"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentController:" destination="W5s-gt-Bwl" eventType="valueChanged" id="LfG-qE-Z8y"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CeL-fw-F27" firstAttribute="centerY" secondItem="aAG-mz-aSw" secondAttribute="centerY" id="1k6-IK-hH2"/>
+                            <constraint firstItem="JBU-KP-qtq" firstAttribute="leading" secondItem="F85-Xu-nXS" secondAttribute="trailing" constant="39" id="5q7-K4-Hvs"/>
+                            <constraint firstItem="VQG-ve-4ab" firstAttribute="centerY" secondItem="uoe-7Q-I7p" secondAttribute="centerY" id="6gh-D7-qVz"/>
+                            <constraint firstItem="y93-mY-jR6" firstAttribute="centerY" secondItem="ECK-za-ff9" secondAttribute="centerY" id="NbD-Rb-RBA"/>
+                            <constraint firstItem="R6m-YW-iPA" firstAttribute="centerX" secondItem="GvN-F4-kqY" secondAttribute="centerX" id="aKX-a7-wN6"/>
+                            <constraint firstItem="4mB-vt-mkx" firstAttribute="centerX" secondItem="GvN-F4-kqY" secondAttribute="centerX" id="bnp-6J-1Ic"/>
+                            <constraint firstItem="ECK-za-ff9" firstAttribute="leading" secondItem="y93-mY-jR6" secondAttribute="trailing" constant="39" id="hZb-VM-YAT"/>
+                            <constraint firstItem="xXW-jN-hVW" firstAttribute="centerX" secondItem="GvN-F4-kqY" secondAttribute="centerX" id="iLX-4n-0Wq"/>
+                            <constraint firstItem="uoe-7Q-I7p" firstAttribute="leading" secondItem="VQG-ve-4ab" secondAttribute="trailing" constant="39" id="nD2-pq-u3B"/>
+                            <constraint firstItem="aAG-mz-aSw" firstAttribute="leading" secondItem="CeL-fw-F27" secondAttribute="trailing" constant="39" id="xMh-US-MeM"/>
+                            <constraint firstItem="F85-Xu-nXS" firstAttribute="centerY" secondItem="JBU-KP-qtq" secondAttribute="centerY" id="xl4-Lg-NwK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Distance calculator" image="second" id="rWF-xA-lRB" userLabel="Third"/>
+                    <connections>
+                        <outlet property="calculateButton" destination="Fid-KT-7Ow" id="tQR-Di-Xlr"/>
+                        <outlet property="destinationA" destination="y93-mY-jR6" id="dSV-IU-b4f"/>
+                        <outlet property="destinationB" destination="F85-Xu-nXS" id="hzx-0b-qwI"/>
+                        <outlet property="destinationC" destination="VQG-ve-4ab" id="Uqi-W9-2Md"/>
+                        <outlet property="destinationD" destination="CeL-fw-F27" id="L0u-DA-EhM"/>
+                        <outlet property="distanceA" destination="ECK-za-ff9" id="aWM-g4-HWY"/>
+                        <outlet property="distanceB" destination="JBU-KP-qtq" id="AO0-a0-Ren"/>
+                        <outlet property="distanceC" destination="uoe-7Q-I7p" id="WXg-iQ-qDF"/>
+                        <outlet property="distanceD" destination="aAG-mz-aSw" id="bfr-kI-SRX"/>
+                        <outlet property="segmentController" destination="xXW-jN-hVW" id="VAu-6d-y6X"/>
+                        <outlet property="startLocation" destination="4mB-vt-mkx" id="Stp-DQ-0sg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXg-9c-658" sceneMemberID="firstResponder"/>
             </objects>
